@@ -1,0 +1,10 @@
+ Create a new maven project downloaded from the spring initializer website with web,thymeleaf, jpa, h2, devtools, validation, security dependencies.
+
+
+
+2.  Implement the following requirement from BestFarms company.
+
+Search farmers by name 
+
+Delete (to be shown only for ADMIN role user) the farmer shown in the search results.
+
