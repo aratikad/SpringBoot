@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body 	 style="background-image: url('https://wallpaperaccess.com/full/4893706.jpg')">
+
+<br><br>
+
+<center><h1 style="color:black;margin-top:70px;color:black;font-size:40px;">Login to Mini Project </h1>
+<br>
+<form th:action="@{/login}" method="POST" >
+	<li th:if="${!#strings.isEmpty(errorMessage)}" th:text="${errorMessage}" />
+	<li th:if="${!#strings.isEmpty(logoutMessage)}" th:text="${logoutMessage}" />
+
+</br>  <input type="text" name="username" placeholder="UserName"> <br>
+</br>   <input type="password" name="password" placeholder="Password"> 
+</br><br> <br> <input type="submit" value=" Login " style="font-size: 20px;"></form>
+
+</center>
+</body>
+</html>

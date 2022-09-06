@@ -1,0 +1,47 @@
+package com.nichi.miniProject.exceptions;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+
+@ControllerAdvice
+public class MyExceptionHandler {
+
+    @ExceptionHandler(Exception.class)
+    public String hander(Exception e, Model model) {
+        model.addAttribute("msg", e.getMessage());
+        return "error.html";
+    }
+
+   /* @ExceptionHandler(NumberFormatException.class)
+    public String hander1(Exception e, Model model) {
+        model.addAttribute("exceptionMessage", e.getMessage());
+        return "error1.html";
+    }
+
+    @ExceptionHandler(InputMismatchException.class)
+    public String hander2(Exception e, Model model) {
+        model.addAttribute("exceptionMessage", e.getMessage());
+        return "error2.html";
+    }
+ */
+    /*
+     * @ExceptionHandler(MethodArgumentNotValidException.class)
+     * public Map<String, String> handleValidationExceptions(
+     * MethodArgumentNotValidException ex) {
+     * 
+     * Map<String, String> errors = new HashMap<>();
+     * 
+     * ex.getBindingResult().getAllErrors().forEach((error) -> {
+     * final String fieldName = ((FieldError) error).getField();
+     * String errorMessage = error.getDefaultMessage();
+     * errors.put(fieldName, errorMessage);
+     * });
+     * 
+     * return errors;
+     * 
+     * }
+     * 
+     */
+
+}

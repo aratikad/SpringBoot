@@ -1,0 +1,9 @@
+com\nichi\miniProject\config\ProjectSecurityConfig.class
+com\nichi\miniProject\MiniProjectApplication.class
+com\nichi\miniProject\services\FarmerService_V2.class
+com\nichi\miniProject\controller\FarmerController.class
+com\nichi\miniProject\model\Farmer.class
+com\nichi\miniProject\model\User.class
+com\nichi\miniProject\repositries\FarmerRepositry_V2.class
+com\nichi\miniProject\controller\HomeController.class
+com\nichi\miniProject\controller\LoginController.class

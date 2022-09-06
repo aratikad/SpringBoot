@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+
+<center><h1> Mini Project</h1></center>
+
+
+<a href="http://localhost:8080/addFarmerV2.html">Add farmer</a>  <br><br>
+
+<a href="http://localhost:8080/jpa/farmers/list">List of all farmer</a>  <br><br>
+
+<a href="http://localhost:8080/searchFarmerDetails.html">Search farmer</a>
+
+
+</html>
